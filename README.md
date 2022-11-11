@@ -1,3 +1,3 @@
-# strataScratch_practice
+# StrataScratch_practice
 
-Practice makes the master  
+:wink: Practice makes the master  
