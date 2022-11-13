@@ -1,3 +1,3 @@
-# StrataScratch_practice
+# sql_practice
 
 :wink: Practice makes the master  
