@@ -14,3 +14,6 @@ SELECT department_name AS Department,
        salary AS Salary
 FROM rank_table
 WHERE salary_rank <= 3;
+
+
+-- link: https://leetcode.com/problems/department-top-three-salaries/
