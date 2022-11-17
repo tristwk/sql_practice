@@ -9,7 +9,8 @@ JOIN Logs l3
   ON l2.id -l3.id = 1 AND l2.num = l3.num;
 
 -- another way
-SELECT *
+SELECT DISTINCT
+    l1.Num AS ConsecutiveNums
 FROM
     Logs l1,
     Logs l2,
