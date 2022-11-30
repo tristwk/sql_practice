@@ -1,13 +1,13 @@
-select business_name,
+select distinct business_name,
 CASE 
-WHEN business_name LIKE '%restaurant%' THEN 'Restaurant' 
-WHEN business_name LIKE '%café%' OR '%cafe%' OR 'coffee' THEN 'Cafe'
-WHEN business_name LIKE '%school%' THEN 'School'
-ELSE 'Other'
+WHEN business_name LIKE '%restaurant%' THEN 'restaurant' 
+WHEN business_name LIKE '%cafe%' THEN 'cafe'
+WHEN business_name LIKE '%café%' THEN 'cafe'
+WHEN business_name LIKE '%coffee%' THEN 'cafe'
+WHEN business_name LIKE '%school%' THEN 'school'
+ELSE 'other'
 END AS 'Business Type'
 from sf_restaurant_health_violations;
-
-
 
 -- postgresql 
 select business_name,
